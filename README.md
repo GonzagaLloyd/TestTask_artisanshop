@@ -5,22 +5,19 @@ No build step, no dependencies: open `index.html` in a browser.
 
 ## Structure
 ```
-index.html                single semantic page (skip link, header/nav, main > article > sections, footer, aside)
-assets/css/styles.css     design tokens (:root), layout, components, a11y helpers, responsive (<=820px)
-assets/js/data.js         content config (casinos, comparison table) – edit here, not in the code
-assets/js/main.js         rendering + behaviour (IIFE, no globals besides SITE_DATA)
-assets/img/favicon.svg    icon
+index.html                single page (header, article sections, footer, promo banner)
+assets/css/styles.css     design tokens (:root), layout, components, responsive (<=820px)
+assets/js/main.js         promo banner close button
+assets/img/               favicon, logo, hero, author photo, casinos/ and badges/ images
 .editorconfig             formatting rules
 ```
 
-## Functionality
-- Ranked casino cards and comparison table rendered from `data.js`; table columns are sortable (click / Enter).
-- Always-visible search field: in-page search that highlights matches (Esc closes).
+## Functionality (same as the live page)
 - Anchor nav (Intro / Casinos / FAQ).
-- FAQ as accessible `<details>` accordions.
-- Dismissible promo banner (appears after 1.5 s, stays closed for the session).
-- Sticky header, responsive layout, keyboard accessible.
+- Search field as a plain GET form.
+- Promo banner shown only below 700px width, closable.
 
 ## Notes
 - The original site was not recoverable from web archives; the structure (headings, table columns, sections) follows the live page as of 2026-10-08.
-- Brand names, bonuses, RTP/payout figures, photos and affiliate links are **placeholders** – no original assets or tracking URLs were copied. Figures are illustrative, not factual claims.
+- Layout, styling, section order and wording follow the original page.
+- Images (site logo, hero, author photo, casino logos, footer badges) and the ranked casino names/bonuses were taken from artisanshop.ch with the site owner's permission for this test task; they live in `assets/img/`.

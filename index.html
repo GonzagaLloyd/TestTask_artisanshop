@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/data.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body id="top">
@@ -25,13 +24,12 @@
     <div class="site-header-top">
       <div class="container header-inner">
         <a class="logo" href="#top" aria-label="Online Casino Im Ausland Spielen – Startseite">
-          <span class="logo-art" aria-hidden="true"><span class="l1">Online</span><span class="l2">Casino</span><span class="l3">Im Ausland Spielen</span></span>
+          <img src="assets/img/logo.png" width="200" height="89" alt="">
         </a>
-        <form class="search-form" id="search-form" role="search">
+        <form class="search-form" role="search" action="#" method="get">
           <label class="visually-hidden" for="search-input">Seite durchsuchen</label>
           <svg class="search-icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <input type="search" id="search-input" placeholder="Was suchen Sie?" autocomplete="off">
-          <span id="search-count" role="status"></span>
+          <input type="text" id="search-input" name="s" placeholder="Was suchen Sie?">
         </form>
         <a class="contact-link" href="#kontakt">Kontaktieren Sie uns</a>
       </div>
@@ -47,9 +45,9 @@
         <div class="container">
           <h1>Online Casino: Spielen aus der Schweiz</h1>
           <div class="byline">
-            <p class="author">Verfasst von: <span class="avatar" aria-hidden="true">GP</span> <a href="#team-title">Gustav Pettersson</a></p>
+            <p class="author">Verfasst von: <img class="avatar" src="assets/img/author.png" width="32" height="32" alt=""> <a href="#team-title">Gustav Pettersson</a></p>
             <p class="updated">
-              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v4h4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Letzte Aktualisierung: <time datetime="2026-10-08">October 8, 2026</time>
             </p>
           </div>
@@ -67,15 +65,53 @@
       </div>
 
       <figure class="container hero-figure">
-        <img src="assets/img/hero.svg" width="1100" height="420" alt="Online Casino Im Ausland Spielen">
+        <img src="assets/img/hero.png" width="1200" height="800" alt="Online Casino Im Ausland Spielen">
       </figure>
 
       <section class="container section" id="casinos" aria-labelledby="casinos-title">
         <h2 id="casinos-title">Top Schweizer Online Casinos &amp; Sportwetten Anbieter</h2>
-        <ol class="casino-list" id="casino-list" aria-label="Ranking der Casinos">
-          <noscript><li>Bitte aktivieren Sie JavaScript, um das Casino-Ranking zu sehen.</li></noscript>
+        <ol class="casino-list" aria-label="Ranking der Casinos">
+          <li class="casino-card">
+            <div class="card-head"><h3 class="card-name"><span class="num">1.</span>Needforspin casino</h3><span class="rating"><strong>4.9</strong><small>/5</small></span></div>
+            <div class="card-body">
+              <a class="card-logo-link" href="https://needforspin80.com/de?stag=179058_6ac7e678c35ec1a0222449d0&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgoneedforspin.com%2Fdpifla4ui#signup" target="_blank" rel="nofollow"><img class="card-logo" src="assets/img/casinos/needforspin.png" width="240" height="120" alt="Needforspin casino Logo" loading="lazy"></a>
+              <div class="offer-box"><strong class="bonus">260% bis zu 2.500 € + 530 FS</strong><span class="offer">Erhalten Sie Ihren Willkommensbonus!</span></div>
+              <a class="btn" href="https://needforspin80.com/de?stag=179058_6ac7e678c35ec1a0222449d0&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgoneedforspin.com%2Fdpifla4ui#signup" target="_blank" rel="nofollow">Jetzt spielen</a>
+            </div>
+          </li>
+          <li class="casino-card">
+            <div class="card-head"><h3 class="card-name"><span class="num">2.</span>RollingSlots casino</h3><span class="rating"><strong>4.9</strong><small>/5</small></span></div>
+            <div class="card-body">
+              <a class="card-logo-link" href="https://rollingslots93.com/de?stag=179058_6ac7e6850ca3b70011964239&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgorollingslots.com%2Fdrin0o9lo#signup" target="_blank" rel="nofollow"><img class="card-logo" src="assets/img/casinos/rollingslots.png" width="240" height="120" alt="RollingSlots casino Logo" loading="lazy"></a>
+              <div class="offer-box"><strong class="bonus">310% bis zu 3.500 € + 570 FS</strong><span class="offer">Erhalten Sie einen Bonus für erste Einzahlungen</span></div>
+              <a class="btn" href="https://rollingslots93.com/de?stag=179058_6ac7e6850ca3b70011964239&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgorollingslots.com%2Fdrin0o9lo#signup" target="_blank" rel="nofollow">Jetzt spielen</a>
+            </div>
+          </li>
+          <li class="casino-card">
+            <div class="card-head"><h3 class="card-name"><span class="num">3.</span>WildTokyo casino</h3><span class="rating"><strong>4.9</strong><small>/5</small></span></div>
+            <div class="card-body">
+              <a class="card-logo-link" href="https://wildtokyo72.com/de/?stag=179058_6ac7e686e95574dbef070275&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgowildtokyo.com%2Fdfprmtzt7" target="_blank" rel="nofollow"><img class="card-logo" src="assets/img/casinos/wildtokyo.png" width="240" height="120" alt="WildTokyo casino Logo" loading="lazy"></a>
+              <div class="offer-box"><strong class="bonus">260% bis zu 3.000 € + 620 Freispiele</strong><span class="offer">Spieltag-Willkommenspaket</span></div>
+              <a class="btn" href="https://wildtokyo72.com/de/?stag=179058_6ac7e686e95574dbef070275&amp;http_referrer=https%3A%2F%2Fartisanshop.ch%2F&amp;tracking_link=http%3A%2F%2Fgowildtokyo.com%2Fdfprmtzt7" target="_blank" rel="nofollow">Jetzt spielen</a>
+            </div>
+          </li>
+          <li class="casino-card">
+            <div class="card-head"><h3 class="card-name"><span class="num">4.</span>Spinlander casino</h3><span class="rating"><strong>4.8</strong><small>/5</small></span></div>
+            <div class="card-body">
+              <a class="card-logo-link" href="https://spinlander32.com/de-ch?stag=179058_6ac7e69b2a9230f6f129b85e#signup" target="_blank" rel="nofollow"><img class="card-logo" src="assets/img/casinos/spinlander.png" width="240" height="120" alt="Spinlander casino Logo" loading="lazy"></a>
+              <div class="offer-box"><strong class="bonus">260% bis zu 2&#x27;600 Fr + 530 Freispiele</strong><span class="offer">Erhalten Sie Ihren Willkommensbonus!</span></div>
+              <a class="btn" href="https://spinlander32.com/de-ch?stag=179058_6ac7e69b2a9230f6f129b85e#signup" target="_blank" rel="nofollow">Jetzt spielen</a>
+            </div>
+          </li>
+          <li class="casino-card">
+            <div class="card-head"><h3 class="card-name"><span class="num">5.</span>Rolletto casino</h3><span class="rating"><strong>4.8</strong><small>/5</small></span></div>
+            <div class="card-body">
+              <a class="card-logo-link" href="https://rolletto.com/en/static/registration?affid=41855&amp;cxd=41855_2161958" target="_blank" rel="nofollow"><img class="card-logo" src="assets/img/casinos/rolletto.png" width="240" height="120" alt="Rolletto casino Logo" loading="lazy"></a>
+              <div class="offer-box"><strong class="bonus">BIS ZU 5 500 €/$ WÄHREND IHRER ERSTEN DREI EINZAHLUNGEN</strong><span class="offer">Willkommenspaket</span></div>
+              <a class="btn" href="https://rolletto.com/en/static/registration?affid=41855&amp;cxd=41855_2161958" target="_blank" rel="nofollow">Jetzt spielen</a>
+            </div>
+          </li>
         </ol>
-        <p class="disclaimer">18+ · Glücksspiel kann süchtig machen. Links in dieser Demo sind Platzhalter.</p>
         <p class="card">Online Casino im Ausland spielen heisst, ein Konto bei einem international lizenzierten Betreiber zu führen und von der Schweiz aus auf dessen Angebot zuzugreifen. Gespielt wird am Rechner oder mobil, eingezahlt in Franken, Euro oder Krypto, und Gewinne fliessen per Karte, E-Wallet oder Kryptowährung zurück.</p>
         <p class="card">Der Unterschied zum konzessionierten Markt zeigt sich vor allem im Umfang: mehr Spielautomaten, mehr Live Tische, mehr Anbieterstudios und Funktionen wie Autoplay oder Bonuskauf. Da diese Plattformen unter anerkannten Lizenzen arbeiten, verläuft das Spiel auf einem gut gewählten Anbieter reibungslos und verlässlich.</p>
       </section>
@@ -84,7 +120,17 @@
         <h2 id="compare-heading">Online Casino im Ausland spielen im Jahr 2026</h2>
         <p>Die Tabelle unten zeigt internationale Plattformen, auf denen Schweizer Spieler bequem spielen, mit ihren <strong>konkreten Merkmalen für das Spielerlebnis</strong>.</p>
         <div class="table-wrap" tabindex="0" role="region" aria-label="Casino-Vergleich">
-          <table class="data-table" id="compare-table"></table>
+          <table class="data-table">
+            <thead><tr><th scope="col">Casino</th><th scope="col">Lizenz</th><th scope="col">Spielauswahl</th><th scope="col">Live Tische</th><th scope="col">Mobile App</th><th scope="col">Willkommensbonus</th><th scope="col">Umsatzbedingung</th><th scope="col">Auszahlungsdauer</th><th scope="col">Sprachen</th><th scope="col">Stärke</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">JungfrauPlay</th><td>MGA</td><td>3200+</td><td>120+</td><td>Ja</td><td>100% bis 2000 CHF</td><td>35x</td><td>0 bis 24 Stunden</td><td>DE, FR, IT</td><td>Grösster Spielkatalog</td></tr>
+              <tr><th scope="row">LemanBet</th><td>Curaçao</td><td>2600+</td><td>90+</td><td>Ja</td><td>200% bis 3000 CHF</td><td>40x</td><td>Bis 12 Stunden</td><td>DE, FR</td><td>Höchster Bonus</td></tr>
+              <tr><th scope="row">SaentisSpin</th><td>MGA</td><td>2400+</td><td>140+</td><td>Ja</td><td>100 Freispiele</td><td>30x</td><td>Bis 24 Stunden</td><td>DE, FR, IT</td><td>Bestes Live Casino</td></tr>
+              <tr><th scope="row">RigiCasino</th><td>Gibraltar</td><td>1900+</td><td>70+</td><td>Ja</td><td>15% Cashback</td><td>Keine</td><td>1 bis 24 Stunden</td><td>DE, EN</td><td>Cashback ohne Umsatz</td></tr>
+              <tr><th scope="row">ThunReels</th><td>Curaçao</td><td>2100+</td><td>80+</td><td>Web App</td><td>120% bis 1500 CHF</td><td>35x</td><td>0 bis 6 Stunden</td><td>DE, FR</td><td>Schnellste Auszahlung</td></tr>
+              <tr><th scope="row">GotthardPlay</th><td>MGA</td><td>2800+</td><td>110+</td><td>Ja</td><td>100% plus 150 Freispiele</td><td>35x</td><td>Bis 24 Stunden</td><td>DE, FR, IT</td><td>Beste Mobilnutzung</td></tr>
+            </tbody>
+          </table>
         </div>
         <p>Die Tabelle hilft beim Vergleich von <strong>Katalogumfang, Live Angebot, App Verfügbarkeit und Sprachen</strong>.</p>
         <p>Wer viel unterwegs spielt, achtet vor allem auf eine native App und eine stabile mobile Oberfläche.</p>
@@ -258,7 +304,7 @@
         <h2 id="team-title">Unser Schweizer Expertenteam</h2>
         <div class="author-card">
           <div class="author-head">
-            <span class="author-photo" aria-hidden="true">GP</span>
+            <img class="author-photo" src="assets/img/author.png" width="80" height="80" alt="">
             <div>
               <strong class="author-name">Gustav Pettersson</strong>
               <span class="role">Autor</span>
@@ -267,7 +313,7 @@
           <div class="author-bio">
             <p>Gustav Pettersson ist ein erfahrener iGaming-Experte, der Schweizer Casinofans und Sportwetten-Liebhaber durch die vielfältige Welt des Glücksspiels begleitet. Er präsentiert die aktuellsten Trends auf dem Schweizer Markt, prüft lizenzierte Plattformen, analysiert attraktive Bonusangebote und informiert über schnelle Auszahlungen – auch mit Kryptowährungen. Mit seinen Tipps entdecken Schweizer Spieler neue Spiele und setzen sicher auf ihre Lieblingsmannschaften.</p>
           </div>
-          <a class="author-mail" href="#kontakt" aria-label="Kontakt zum Autor"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a class="author-mail" href="#kontakt" aria-label="Kontakt zum Autor"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="currentColor"/><path class="fold" d="M2.5 5.5 12 12.5l9.5-7" fill="none" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
         </div>
       </section>
     </article>
@@ -278,15 +324,15 @@
       <div class="container">
         <div class="footer-intro">
           <a class="footer-logo" href="#top" aria-label="Online Casino Im Ausland Spielen – Startseite">
-            <span class="logo-art" aria-hidden="true"><span class="l1">Online</span><span class="l2">Casino</span><span class="l3">Im Ausland Spielen</span></span>
+            <img src="assets/img/logo.png" width="200" height="89" alt="">
           </a>
           <p class="footer-title">Verlässliche Tipps für sicheres Spielen in Schweizer Casinos &amp; Sportwetten:</p>
         </div>
         <ul class="badges">
-          <li><a class="badge badge-gambleaware" href="#" rel="nofollow noopener">Gamble<span>Aware</span></a></li>
-          <li><a class="badge badge-esbk" href="#" rel="nofollow noopener" aria-label="Eidgenössische Spielbankenkommission"><span class="cross" aria-hidden="true">✚</span><span class="esbk-text">Schweizerische Eidgenossenschaft<br>Confédération suisse<br>Confederazione Svizzera<br>Confederaziun svizra</span></a></li>
-          <li><a class="badge badge-gamstop" href="#" rel="nofollow noopener" aria-label="GamStop"><span>GAM</span><b>STOP</b></a></li>
-          <li><a class="badge badge-gespa" href="#" rel="nofollow noopener" aria-label="Intercantonal Gambling and Betting Supervisory Authority">gespa<span class="sq" aria-hidden="true"></span></a></li>
+          <li><a class="badge" href="#" rel="nofollow noopener"><img src="assets/img/badges/gambleaware.png" width="144" height="48" alt="GambleAware"></a></li>
+          <li><a class="badge" href="#" rel="nofollow noopener"><img src="assets/img/badges/esbk.png" width="144" height="76" alt="Eidgenössische Spielbankenkommission"></a></li>
+          <li><a class="badge" href="#" rel="nofollow noopener"><img src="assets/img/badges/gamstop.png" width="144" height="48" alt="GamStop"></a></li>
+          <li><a class="badge" href="#" rel="nofollow noopener"><img src="assets/img/badges/gespa.png" width="144" height="47" alt="Intercantonal Gambling and Betting Supervisory Authority"></a></li>
         </ul>
       </div>
     </div>
@@ -298,8 +344,8 @@
     </div>
   </footer>
 
-  <aside class="promo-banner" id="promo-banner" hidden aria-label="Aktion">
-    <span class="promo-logo" aria-hidden="true">★</span>
+  <aside class="promo-banner" id="promo-banner" aria-label="Aktion">
+    <img class="promo-logo" src="assets/img/casinos/spinlander.png" width="80" height="40" alt="">
     <p class="promo-text"><strong>Spinlander casino</strong><br>Erhalten Sie Ihren Willkommensbonus!<br>260% bis zu 2'600 Fr + 530 Freispiele</p>
     <a class="btn btn-small" href="#casinos">Mehr Infos</a>
     <button class="promo-close" type="button" aria-label="Banner schliessen">×</button>
